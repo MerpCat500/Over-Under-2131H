@@ -27,6 +27,7 @@ motor RightBack = motor(PORT9, false);
 
 motor_group RightDrive = motor_group(RightFront, RightMid, RightBack);
 
+motor_group AllDriveMotors = motor_group(LeftFront, LeftMid, LeftBack, RightFront, RightMid, RightBack);
 
 /** 
  * Used to initialize code/tasks/devices added using tools in VEXcode Pro.

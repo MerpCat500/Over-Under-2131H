@@ -1,4 +1,3 @@
-
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
 /*    Module:       main.cpp                                                  */
@@ -19,8 +18,8 @@ TerminalLogger Terminal = TerminalLogger();
 
 int main() {
   // Initializing Robot Configuration. DO NOT REMOVE!
+  Terminal.Log("Start", "Main Started");
   vexcodeInit();
-  Terminal.Log("Info", "<MESSAGE HERE>", 1, 2.0, true);
 
   while (true) {
     wait(20, msec);

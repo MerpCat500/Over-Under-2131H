@@ -15,6 +15,8 @@ extern motor RightMid;
 extern motor RightBack;
 
 extern motor_group RightDrive;
+extern motor_group AllDriveMotors;
+
 /**
  * Used to initialize code/tasks/devices added using tools in VEXcode Pro.
  *
