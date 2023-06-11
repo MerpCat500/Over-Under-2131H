@@ -7,7 +7,7 @@ public:
   TerminalLogger() {
     Log("Init", "Terminal Init");
   }
-
+ 
   template<typename ... Strings>
   void Log(std::string Level, const Strings&... rest) {
     std::cout << "[" << Level << "] :";

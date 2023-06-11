@@ -11,6 +11,7 @@
 // ---- END VEXCODE CONFIGURED DEVICES ----
 
 #include "vex.h"
+#include "Movement/DriverControl.h"
 
 using namespace vex;
 
@@ -20,7 +21,8 @@ int main() {
   // Initializing Robot Configuration. DO NOT REMOVE!
   Terminal.Log("Start", "Main Started");
   vexcodeInit();
-
+  
+  Competition.drivercontrol(DriverControl);
   while (true) {
     wait(20, msec);
   }

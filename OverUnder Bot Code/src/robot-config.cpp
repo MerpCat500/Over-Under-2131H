@@ -5,7 +5,8 @@ using namespace vex;
 // A global instance of brain used for printing to the V5 brain screen
 brain Brain;
 controller Controller;
-                  
+competition Competition;               
+
 /**               _
  *  _____       (_)
  * | ___ \ _  __ _ _    __ _____
@@ -29,6 +30,8 @@ motor_group RightDrive = motor_group(RightFront, RightMid, RightBack);
 
 motor_group AllDriveMotors = motor_group(LeftFront, LeftMid, LeftBack, RightFront, RightMid, RightBack);
 
+motor Puncher = motor(PORT1, ratio36_1, false);
+ 
 /** 
  * Used to initialize code/tasks/devices added using tools in VEXcode Pro.
  *

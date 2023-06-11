@@ -6,9 +6,9 @@ class Motion {
   int wheelSize;
   Motion(int WheelSize): 
     wheelSize{WheelSize}
-    {
+  {
 
-    };
+  };
 
   void linearRamp(double Distance, double speed, bool right = false) {
 
@@ -17,7 +17,7 @@ class Motion {
     AllDriveMotors.resetPosition();
 
     AllDriveMotors.spin(fwd, 0, pct);
-
+ 
     Distance = (Distance/(wheelSize*2*M_PI))*360;
     if (right) {
       for (int i = 0; i < speed; i++) {

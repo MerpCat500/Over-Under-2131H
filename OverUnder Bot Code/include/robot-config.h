@@ -3,6 +3,7 @@ using namespace vex;
 
 extern brain Brain;
 extern controller Controller;
+extern competition Competition;
 
 extern motor LeftFront;
 extern motor LeftMid;
@@ -16,6 +17,8 @@ extern motor RightBack;
 
 extern motor_group RightDrive;
 extern motor_group AllDriveMotors;
+
+extern motor Puncher;
 
 /**
  * Used to initialize code/tasks/devices added using tools in VEXcode Pro.
