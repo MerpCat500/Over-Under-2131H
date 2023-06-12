@@ -13,7 +13,6 @@ void DriverControl() {
     double FLsmooth = 0.97*FLlast + 0.3*FLAxis;
     double FRsmooth = 0.97*FRlast + 0.3*FRAxis;
 
-
     LeftDrive.spin(fwd, FLsmooth, pct);
     RightDrive.spin(fwd, FRsmooth, pct);
 
@@ -30,3 +29,4 @@ void DriverControl() {
     wait(20, msec);
   }
 }
+
