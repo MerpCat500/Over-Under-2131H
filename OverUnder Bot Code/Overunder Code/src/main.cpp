@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
 /*    Module:       main.cpp                                                  */
-/*    Author:       C:\Users\merpl                                            */
+/*    Author:       Andrew Hilton 2131H                                       */
 /*    Created:      Mon Jul 10 2023                                           */
 /*    Description:  V5 project                                                */
 /*                                                                            */
@@ -21,7 +21,6 @@ Screen ScreenSel;
 int main() 
 {
   // Initializing Robot Configuration. DO NOT REMOVE!
-  std::cout << " - Code Start - " << std::endl;
   vexcodeInit();
 
   Competition.drivercontrol(DriverControl);
@@ -30,6 +29,7 @@ int main()
 
   while(1)
   { 
+   
     ScreenSel.Update();
     wait(20, msec);
   }

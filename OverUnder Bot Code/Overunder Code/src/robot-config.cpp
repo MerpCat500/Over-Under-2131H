@@ -7,12 +7,12 @@ controller Controller1;
 brain Brain;
 competition Competition;
 
-motor FLMotor = motor(PORT20, ratio6_1, false);
-motor FRMotor = motor(PORT19, ratio6_1, true);
-motor MLMotor = motor(PORT10, ratio6_1, false);
-motor MRMotor = motor(PORT1, ratio6_1, true);
-motor BLMotor = motor(PORT9, ratio6_1, true);
-motor BRMotor = motor(PORT4, ratio6_1, false);
+motor FLMotor = motor(PORT17, ratio6_1, true);
+motor FRMotor = motor(PORT10, ratio6_1, false);
+motor MLMotor = motor(PORT15, ratio6_1, true);
+motor MRMotor = motor(PORT18, ratio6_1, false);
+motor BLMotor = motor(PORT14, ratio6_1, false);
+motor BRMotor = motor(PORT20, ratio6_1, true);
 
 motor_group LeftDrive = motor_group(FLMotor, MLMotor, BLMotor);
 motor_group RightDrive = motor_group(FRMotor, MRMotor, BRMotor);
