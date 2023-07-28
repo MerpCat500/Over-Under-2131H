@@ -2,7 +2,7 @@
 /*                                                                            */
 /*    Module:       main.cpp                                                  */
 /*    Author:       Andrew Hilton 2131H                                       */
-/*    Created:      Mon Jul 10 2023                                           */
+/*    Created:      Thu Jul 27 2023                                           */
 /*    Description:  V5 project                                                */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
@@ -11,26 +11,23 @@
 // ---- END VEXCODE CONFIGURED DEVICES ----
 
 #include "vex.h"
-#include "Screen.hpp"
-#include "DriverControl.hpp"
+#include "driverCon.h"
+#include "screen.h"
 
 using namespace vex;
 
-Screen ScreenSel;
-
-int main() 
-{
+int main() {
   // Initializing Robot Configuration. DO NOT REMOVE!
-  std::cout << " - Code Start - " << std::endl;
   vexcodeInit();
-
+  
   Competition.drivercontrol(DriverControl);
 
-  ScreenSel.Draw();
+  Screen::Draw();
 
   while(1)
   { 
-    ScreenSel.Update();
+    Screen::Update();
     wait(20, msec);
   }
+
 }

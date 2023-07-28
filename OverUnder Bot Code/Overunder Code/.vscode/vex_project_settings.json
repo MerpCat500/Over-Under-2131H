@@ -1,0 +1,18 @@
+{
+	"project": {
+		"name": "Overunder_Code",
+		"slot": 1,
+		"description": "Empty V5 C++ Project",
+		"platform": "V5",
+		"creationDate": "Thu, 27 Jul 2023 19:53:29 GMT",
+		"language": "cpp",
+		"sdkVersion": "V5_20220726_10_00_00",
+		"cpp": {
+			"includePath": []
+		}
+	},
+	"extension": {
+		"version": "0.4.2",
+		"json": 1
+	}
+}
